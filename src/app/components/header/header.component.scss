@@ -1,0 +1,29 @@
+$header-bg-color-white-theme: #E9ECEF;
+
+.header {
+    width: 100%;
+    position:  fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; 
+    background-color:  $header-bg-color-white-theme;
+
+    .header-box {
+        .title{
+            margin: 0;
+        }
+        .subtitle {
+            margin-left: 3em;
+        }
+    }
+
+    .social-links {
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
