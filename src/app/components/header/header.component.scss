@@ -1,17 +1,18 @@
-$header-bg-color-white-theme: #E9ECEF;
+$header-bg-color-white-theme: #e9ecef;
 
 .header {
     width: 100%;
-    position:  fixed;
+    position: fixed;
     top: 0;
     left: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
-    padding: 20px; 
-    background-color:  $header-bg-color-white-theme;
+    padding: 20px;
+    background-color: $header-bg-color-white-theme;
 
     .header-box {
-        .title{
+        .title {
             margin: 0;
             font-size: 38px;
         }
@@ -27,5 +28,4 @@ $header-bg-color-white-theme: #E9ECEF;
         flex-direction: column;
         justify-content: space-between;
     }
-
 }
