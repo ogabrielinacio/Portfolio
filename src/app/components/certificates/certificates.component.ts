@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Renderer2 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { CertificatesArray } from "./certificates.data";
 
@@ -70,8 +70,10 @@ export class CertificatesComponent {
     this.isReverseOrder = reverse;
   }
 
+  constructor(private renderer: Renderer2) {}
+
   ngOnInit() {
-    document.addEventListener("click", (event) => {
+    this.renderer.listen("document", "click", (event) => {
       const target = event.target as HTMLElement;
       const sortDropdown = document.querySelector(".sort-type-dropdown");
       const orderDropdown = document.querySelector(".order-type-dropdown");
