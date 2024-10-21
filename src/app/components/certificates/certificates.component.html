@@ -1,0 +1,88 @@
+<div class="certificates-container">
+    <h2>My Certificates</h2>
+
+    <div class="categories-buttons">
+        <button
+            *ngFor="let category of categories"
+            (click)="selectCategory(category)"
+            [class.active]="selectedCategory === category"
+        >
+            {{ category }}
+        </button>
+        <button
+            (click)="selectCategory(null)"
+            [class.active]="!selectedCategory"
+        >
+            Show All
+        </button>
+    </div>
+    <div class="dropdown-container">
+        <div class="sort-type-dropdown">
+            <p>Sort by:</p>
+            <button (click)="toggleSortDropdown()">{{ sortType }}</button>
+            <div *ngIf="isSortDropdownOpen" class="dropdown-menu">
+                <button
+                    class="dropdown-item"
+                    (click)="
+                        selectSortType(ESortType.Date); toggleSortDropdown()
+                    "
+                    [class.active]="sortType === ESortType.Date"
+                >
+                    {{ ESortType.Date }}
+                </button>
+                <button
+                    class="dropdown-item"
+                    (click)="
+                        selectSortType(ESortType.Alphabetical);
+                        toggleSortDropdown()
+                    "
+                    [class.active]="sortType === ESortType.Alphabetical"
+                >
+                    {{ ESortType.Alphabetical }}
+                </button>
+            </div>
+        </div>
+
+        <div class="order-type-dropdown">
+            <p>Order By:</p>
+            <button (click)="toggleOrderDropdown()">
+                {{ isReverseOrder ? "Descending" : "Ascending" }}
+            </button>
+            <div *ngIf="isOrderDropdownOpen" class="dropdown-menu">
+                <button
+                    class="dropdown-item"
+                    (click)="selectOrder(false); toggleOrderDropdown()"
+                    [class.active]="!isReverseOrder"
+                >
+                    Ascending
+                </button>
+                <button
+                    class="dropdown-item"
+                    (click)="selectOrder(true); toggleOrderDropdown()"
+                    [class.active]="isReverseOrder"
+                >
+                    Descending
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="certificate-card"
+        *ngFor="let certificate of getFilteredCertificates()"
+    >
+        <div class="certificate-info">
+            <h3>{{ certificate.title }}</h3>
+            <p><strong>Issuer:</strong> {{ certificate.issuer }}</p>
+        </div>
+        <div class="certificate-actions">
+            <a
+                [href]="certificate.issuerUrl ?? certificate.url"
+                target="_blank"
+                class="view-certificate"
+            >
+                View Certificate
+            </a>
+        </div>
+    </div>
+</div>
