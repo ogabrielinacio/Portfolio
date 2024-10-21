@@ -1,10 +1,11 @@
+@import "../../../variables.scss";
+
 .about-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 2rem;
-    /* background-color: #f9f9f9; */
 }
 
 .about-content {
@@ -34,7 +35,6 @@
     p {
         font-size: 1.2rem;
         line-height: 1.6;
-        color: #333;
         max-width: 700px;
     }
 }

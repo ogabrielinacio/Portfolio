@@ -1,4 +1,4 @@
-$header-bg-color-white-theme: #e9ecef;
+@import "../../../variables.scss";
 
 .header {
     width: 100%;
@@ -9,8 +9,11 @@ $header-bg-color-white-theme: #e9ecef;
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: $header-bg-color-white-theme;
+   background-color: $base;
 
+    h2 {
+       color: $text; 
+    }
     .header-box {
         .title {
             margin: 0;
@@ -29,3 +32,5 @@ $header-bg-color-white-theme: #e9ecef;
         justify-content: space-between;
     }
 }
+
+

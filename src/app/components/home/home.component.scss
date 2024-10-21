@@ -1,3 +1,5 @@
+@import "../../../variables.scss";
+
 .home {
     display: flex;
     flex-direction: column;
@@ -5,6 +7,7 @@
     top: 9rem;
     justify-content: center;
     gap: 2rem;
+    background-color: $mantle;
 
     @media (min-width: 768px) {
         flex-direction: column;

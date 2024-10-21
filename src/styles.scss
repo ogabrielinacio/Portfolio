@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+    color: $blue;
+ 
+}
+h2 {
+    color: $peach;
+}
+h3, h4, h5, h6 { 
+    color: $sky
+}
+
+p {
+    color: $text;
+}
+
+a {
+    color: $sky;
+    &:hover {
+    color: $red;
+
+    }
+ }
+
+button {
+    background-color: $surface0;
+    color: $text;
+     &.active {
+        background-color: $overlay2;
+        color: #FFFF;
+    }
+}
