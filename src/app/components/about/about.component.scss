@@ -18,11 +18,16 @@
 }
 
 .about-image {
+    margin-top: 2rem;
     img {
         width: 350px;
         height: 350px;
         border-radius: 50%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 600px) {
+        margin-top: 4rem;
     }
 }
 

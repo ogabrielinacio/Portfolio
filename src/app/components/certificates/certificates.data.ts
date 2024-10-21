@@ -1,5 +1,5 @@
 import { environment } from "../../../environments/environment";
-import { Certificate, CertificateCategory } from "./certificates.model"; // Atualize a importação
+import { Certificate, CertificateCategory } from "./certificates.model"; 
 
 const baseUrl = environment.baseUrl;
 
