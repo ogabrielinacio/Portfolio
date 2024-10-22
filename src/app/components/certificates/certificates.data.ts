@@ -1,5 +1,5 @@
 import { environment } from "../../../environments/environment";
-import { Certificate, CertificateCategory } from "./certificates.model"; 
+import { Certificate, CertificateCategory } from "./certificates.model";
 
 const baseUrl = environment.baseUrl;
 
@@ -31,7 +31,7 @@ export const CertificatesArray: Certificate[] = [
   {
     title: "Advanced Patterns and Techniques with Git and GitHub",
     issuer: "Full Cycle",
-    url: `${baseUrl}/FullCycle-Padroes-e-tecnicas-avancadas-com-GitHub.pdf`,
+    url: `${baseUrl}/FullCycle-Padroes-e-tecnicas-avancadas-com-git-e-github.pdf`,
     issuerUrl:
       "https://fullcycle.com.br/certificado/c67d8c89-639e-4ffb-8564-d861ab644c77",
     issueDate: new Date(2024, 10, 18),
@@ -78,7 +78,7 @@ export const CertificatesArray: Certificate[] = [
   {
     title: ".NET Architecture Track",
     issuer: "Globalcode Tecnologia e Eventos",
-    url: `${baseUrl}/TDC2024SPAArquitetureDotnet.pdf`,
+    url: `${baseUrl}/TDC2024SPArquitetureDotnet.pdf`,
     issueDate: new Date(2024, 9, 19),
     category: [
       CertificateCategory.Architecture,
@@ -114,7 +114,7 @@ export const CertificatesArray: Certificate[] = [
   {
     title: "Creating Embedded Linux Systems with Yocto Project",
     issuer: "Embarcados",
-    url: `${baseUrl}/CursoYocto.pdf`,
+    url: `${baseUrl}/Yocto.pdf`,
     issuerUrl: "https://cursos.embarcados.com.br/verificar/af8TMQSPBu/",
     issueDate: new Date(2023, 8, 1),
     category: [CertificateCategory.EmbeddedSystem],
@@ -122,7 +122,7 @@ export const CertificatesArray: Certificate[] = [
   {
     title: "Creating APIs with ASP.NET Core 2.0 and Dapper",
     issuer: "balta.io",
-    url: `${baseUrl}/Dotnet-Backend-Career-Balta/CriandoApiComAspNetCoreEDapper.pdf`,
+    url: `${baseUrl}/Dotnet-Backend-Career-Balta/CriandoApiComAsptNetCoreEDapper.pdf`,
     issuerUrl:
       "https://balta.io/certificados/65913fba-868a-4b23-b9b3-5267ec8e62c7",
     issueDate: new Date(2023, 8, 30),
@@ -392,14 +392,14 @@ export const CertificatesArray: Certificate[] = [
   {
     title: "HTML5 and CSS3 Part 1: The First Web Page",
     issuer: "Alura",
-    url: `${baseUrl}/HTMLCSSJSParte1.pdf`,
+    url: `${baseUrl}/HTMLCSSJSparte1.pdf`,
     issueDate: new Date(2021, 1, 15),
     category: [CertificateCategory.Frontend],
   },
   {
     title: "HTML5 and CSS3 Part 2: Positioning, Lists, and Navigation",
     issuer: "Alura",
-    url: `${baseUrl}/HTMLCSSJSParte2.pdf`,
+    url: `${baseUrl}/HTMLCSSJSparte2.pdf`,
     issueDate: new Date(2021, 1, 15),
     category: [CertificateCategory.Frontend],
   },
