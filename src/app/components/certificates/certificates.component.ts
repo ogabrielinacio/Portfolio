@@ -26,15 +26,13 @@ export class CertificatesComponent {
   isOrderDropdownOpen = false;
 
   getFilteredCertificates(): Certificate[] {
-    if (!this.selectedCategory) {
-      return this.certificates;
-    }
-
-    let filteredCertificates = this.certificates.filter((certificate) =>
-      certificate.category.includes(
-        this.selectedCategory as CertificateCategory,
-      ),
-    );
+    const filteredCertificates = this.selectedCategory
+      ? this.certificates.filter((certificate) =>
+          certificate.category.includes(
+            this.selectedCategory as CertificateCategory,
+          ),
+        )
+      : [...this.certificates];
 
     filteredCertificates.sort((a, b) => {
       if (this.sortType === SortType.Alphabetical) {
