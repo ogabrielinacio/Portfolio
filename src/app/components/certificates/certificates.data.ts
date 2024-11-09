@@ -5,6 +5,14 @@ const baseUrl = environment.baseUrl;
 
 export const CertificatesArray: Certificate[] = [
   {
+    title: "Angular Deep Dive - Beginner to Advanced (Angular 18)",
+    issuer: "Udemy",
+    url: `${baseUrl}/AngularDeepDive.pdf`,
+    issuerUrl: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-e10c6b03-0e09-46c8-883b-9db995223409.pdf",
+    issueDate: new Date(2024,11,9),
+    category: [CertificateCategory.Frontend]
+  },
+  {
     title: "Domain Driven Design",
     issuer: "Full Cycle",
     url: `${baseUrl}/FullCycle-Domain-Driven-Design.pdf`,
