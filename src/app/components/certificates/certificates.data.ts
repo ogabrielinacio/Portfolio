@@ -269,7 +269,7 @@ export const CertificatesArray: Certificate[] = [
     issueDate: new Date(2023, 4, 2),
     issuerUrl:
       "https://balta.io/certificados/5c59899d-e846-4a23-854f-9cd8e68b915d",
-    category: [CertificateCategory.Frontend],
+    category: [CertificateCategory.Mobile],
   },
   {
     title: "Data Manipulation with Python",
