@@ -1,17 +1,19 @@
 <div class="projects-container">
   <h2>My GitHub Projects</h2>
   <div class="projects-grid">
-    <div class="project-card" *ngFor="let project of projects">
-      <div class="header-card">
-        <h3>
-          <a [href]="project.url" target="_blank">{{ project.name }}</a>
-        </h3>
-        <p class="project-description">{{ project.description }}</p>
+    @for(project of projects; track project.id){
+      <div class="project-card">
+        <div class="header-card">
+          <h3>
+            <a [href]="project.url" target="_blank">{{ project.name }}</a>
+          </h3>
+          <p class="project-description">{{ project.description }}</p>
+        </div>
+        <div class="footer-card">
+          <span class="language-color" [style.background-color]="project.languageColor"></span>
+          <span class="language">{{ project.language }}</span>
+        </div>
       </div>
-      <div class="footer-card">
-        <span class="language-color" [style.background-color]="project.languageColor"></span>
-        <span class="language">{{ project.language }}</span>
-      </div>
-    </div>
+    }
   </div>
 </div>

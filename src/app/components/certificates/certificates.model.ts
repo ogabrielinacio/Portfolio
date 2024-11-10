@@ -1,4 +1,5 @@
 export interface Certificate {
+  id?: number;
   title: string;
   issuer: string;
   url: string;

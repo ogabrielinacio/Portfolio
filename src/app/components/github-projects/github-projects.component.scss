@@ -22,7 +22,7 @@
                 transform 0.3s ease,
                 box-shadow 0.3s ease;
             padding: 1rem;
-            width: 30%;
+            width: 40%;
 
             &:hover {
                 transform: translateY(-5px);
@@ -36,9 +36,6 @@
 
                     a {
                         text-decoration: none;
-                        word-break: break-all;
-                        white-space: normal;
-
                         &:hover {
                             text-decoration: underline;
                         }
@@ -74,6 +71,8 @@
     @media (max-width: 1200px) {
         .projects-grid .project-card {
             width: 45%;
+            word-break: break-all;
+            white-space: normal;
         }
     }
 

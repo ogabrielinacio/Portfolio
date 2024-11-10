@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 interface Project {
+  id: number;
   name: string;
   url: string;
   description: string;
@@ -19,6 +20,7 @@ interface Project {
 export class GithubProjectsComponent {
   projects: Project[] = [
     {
+      id: 0,
       name: 'SmartIrrigatorAPI',
       url: 'https://github.com/ogabrielinacio/SmartIrrigatorAPI',
       description: 'API for managing smart irrigation system',
@@ -26,6 +28,7 @@ export class GithubProjectsComponent {
       languageColor: '#178600',
     },
     {
+      id: 1,
       name: 'Portfolio',
       url: 'https://github.com/ogabrielinacio/Portfolio',
       description: 'Simple Portfolio built in Angular',
@@ -33,6 +36,7 @@ export class GithubProjectsComponent {
       languageColor: '#2b7489',
     },
     {
+      id: 2,
       name: 'esp_provisioning_ble',
       url: 'https://github.com/ogabrielinacio/esp_provisioning_ble',
       description: 'A Flutter plugin for provisioning ESP32 modules with BLE',
@@ -40,6 +44,7 @@ export class GithubProjectsComponent {
       languageColor: '#00B4AB',
     },
     {
+      id: 3,
       name: 'MqttBridge',
       url: 'https://github.com/ogabrielinacio/MqttBridge',
       description: 'MQTT Bridge of SmartIrrigator',
@@ -47,6 +52,7 @@ export class GithubProjectsComponent {
       languageColor: '#00ADD8',
     },
     {
+      id: 4,
       name: 'BoilerControllerFirmware',
       url: 'https://github.com/ogabrielinacio/BoilerControllerFirmware',
       description: 'Firmware for boiler control system',
@@ -54,6 +60,7 @@ export class GithubProjectsComponent {
       languageColor: '#555555',
     },
     {
+      id: 5,
       name: 'ESP32-Rust-Samples',
       url: 'https://github.com/ogabrielinacio/ESP32-Rust-Samples',
       description:

@@ -16,7 +16,10 @@ import {
   styleUrl: "./certificates.component.scss",
 })
 export class CertificatesComponent {
-  certificates = CertificatesArray;
+  certificates = CertificatesArray.map((certificate,index) =>({
+    ...certificate,
+    id: index 
+  }));
   categories = Object.values(CertificateCategory);
   selectedCategory: CertificateCategory | null = CertificateCategory.Backend;
   ESortType = SortType;
