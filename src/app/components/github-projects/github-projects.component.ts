@@ -37,11 +37,12 @@ export class GithubProjectsComponent {
     },
     {
       id: 2,
-      name: 'esp_provisioning_ble',
-      url: 'https://github.com/ogabrielinacio/esp_provisioning_ble',
-      description: 'A Flutter plugin for provisioning ESP32 modules with BLE',
-      language: 'Dart',
-      languageColor: '#00B4AB',
+      name: 'Terraform-EC2-MQTT-HTTPS',
+      url: 'https://github.com/ogabrielinacio/Terraform-EC2-MQTT-HTTPS',
+      description: `Terraform modules to set up an EC2 
+      instance configured for MQTT and HTTPS protocols`,
+      language: 'HCL',
+      languageColor: '#2b7489',
     },
     {
       id: 3,
@@ -53,20 +54,20 @@ export class GithubProjectsComponent {
     },
     {
       id: 4,
-      name: 'BoilerControllerFirmware',
-      url: 'https://github.com/ogabrielinacio/BoilerControllerFirmware',
-      description: 'Firmware for boiler control system',
-      language: 'C',
-      languageColor: '#555555',
+      name: 'esp_provisioning_ble',
+      url: 'https://github.com/ogabrielinacio/esp_provisioning_ble',
+      description: 'A Flutter plugin for provisioning ESP32 modules with BLE',
+      language: 'Dart',
+      languageColor: '#00B4AB',
     },
     {
       id: 5,
-      name: 'ESP32-Rust-Samples',
-      url: 'https://github.com/ogabrielinacio/ESP32-Rust-Samples',
+      name: 'go-graphql',
+      url: 'https://github.com/ogabrielinacio/go-graphql',
       description:
-        'Just a repository for projects on an ESP32 using the Rust language',
-      language: 'Rust',
-      languageColor: '#DEA584',
+        'A Golang API that utilizes GraphQL for managing courses and categorie',
+      language: 'Go',
+      languageColor: '#00ADD8',
     },
   ];
 }
