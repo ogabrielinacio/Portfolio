@@ -21,28 +21,28 @@ export class GithubProjectsComponent {
   projects: Project[] = [
     {
       id: 0,
-      name: 'SmartIrrigatorAPI',
-      url: 'https://github.com/ogabrielinacio/SmartIrrigatorAPI',
-      description: 'API for managing smart irrigation system',
+      name: 'RelayController',
+      url: 'https://github.com/ogabrielinacio/RelayController',
+      description: 'A .NET API for RelayController Application',
       language: 'C#',
       languageColor: '#178600',
     },
     {
       id: 1,
-      name: 'Portfolio',
-      url: 'https://github.com/ogabrielinacio/Portfolio',
-      description: 'Simple Portfolio built in Angular',
-      language: 'TypeScript',
-      languageColor: '#2b7489',
+      name: 'PokedexBackend',
+      url: 'https://github.com/ogabrielinacio/PokedexBackend',
+      description: 'A .NET API that acts as an intermediary to handle requests to the PokeAPI',
+      language: 'C#',
+      languageColor: '#178600',
     },
     {
       id: 2,
-      name: 'Terraform-EC2-MQTT-HTTPS',
-      url: 'https://github.com/ogabrielinacio/Terraform-EC2-MQTT-HTTPS',
-      description: `Terraform modules to set up an EC2 
-      instance configured for MQTT and HTTPS protocols`,
-      language: 'HCL',
-      languageColor: '#2b7489',
+      name: 'go-graphql',
+      url: 'https://github.com/ogabrielinacio/go-graphql',
+      description:
+        'A Golang API that utilizes GraphQL for managing courses and categorie',
+      language: 'Go',
+      languageColor: '#00ADD8',
     },
     {
       id: 3,
@@ -54,20 +54,20 @@ export class GithubProjectsComponent {
     },
     {
       id: 4,
-      name: 'esp_provisioning_ble',
-      url: 'https://github.com/ogabrielinacio/esp_provisioning_ble',
-      description: 'A Flutter plugin for provisioning ESP32 modules with BLE',
-      language: 'Dart',
-      languageColor: '#00B4AB',
+      name: 'Portfolio',
+      url: 'https://github.com/ogabrielinacio/Portfolio',
+      description: 'Simple Portfolio built in Angular',
+      language: 'TypeScript',
+      languageColor: '#2b7489',
     },
     {
       id: 5,
-      name: 'go-graphql',
-      url: 'https://github.com/ogabrielinacio/go-graphql',
-      description:
-        'A Golang API that utilizes GraphQL for managing courses and categorie',
-      language: 'Go',
-      languageColor: '#00ADD8',
+      name: 'Terraform-EC2-MQTT-HTTPS',
+      url: 'https://github.com/ogabrielinacio/Terraform-EC2-MQTT-HTTPS',
+      description: `Terraform modules to set up an EC2 
+      instance configured for MQTT and HTTPS protocols`,
+      language: 'HCL',
+      languageColor: '#63388E',
     },
   ];
 }
