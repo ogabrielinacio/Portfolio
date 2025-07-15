@@ -5,6 +5,14 @@ const baseUrl = environment.baseUrl;
 
 export const CertificatesArray: Certificate[] = [
   {
+    title: 'DDD: Modelagem Tática e Patterns',
+    issuer: 'Full Cycle',
+    url: `${baseUrl}/FullCycle-DDD-Modelagem-Tatica-E-Patterns.pdf`,
+    issuerUrl: 'https://fullcycle.com.br/certificado/4b0b5f02-f2f4-4d73-8b24-bf22e80254a3',
+    issueDate: new Date(2025,7, 15),
+    category: [CertificateCategory.Backend, CertificateCategory.Architecture]
+  },
+  {
     title: 'Introduction to OpenTelemetry',
     issuer: 'Full Cycle',
     url: `${baseUrl}/FullCycle-Introducao-A-Opentelemetry.pdf`,
