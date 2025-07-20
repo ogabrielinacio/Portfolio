@@ -5,7 +5,7 @@ const baseUrl = environment.baseUrl;
 
 export const CertificatesArray: Certificate[] = [
   {
-    title: 'Arquitetura Hexagonal',
+    title: 'Hexagonal Architecture',
     issuer: 'Full Cycle',
     url: `${baseUrl}/FullCycle-Arquitetura-Hexagonal.pdf`,
     issuerUrl: 'https://fullcycle.com.br/certificado/1dfdd98d-461b-4f2c-9486-1a7b8211c815',
@@ -13,7 +13,7 @@ export const CertificatesArray: Certificate[] = [
     category: [CertificateCategory.Backend,CertificateCategory.Architecture]
   },
   {
-    title: 'Event Storming na Prática',
+    title: 'Event Storming in Practice',
     issuer: 'Full Cycle',
     url: `${baseUrl}/FullCycle-Event-Storming-Na-Pratica.pdf`,
     issuerUrl: 'https://fullcycle.com.br/certificado/29db9d0d-89fc-40ad-9dc9-31cd96c334ce',
@@ -21,7 +21,7 @@ export const CertificatesArray: Certificate[] = [
     category: [CertificateCategory.Architecture]
   },
   {
-    title: 'DDD: Modelagem Tática e Patterns',
+    title: 'DDD: Tactical Modeling and Patterns',
     issuer: 'Full Cycle',
     url: `${baseUrl}/FullCycle-DDD-Modelagem-Tatica-E-Patterns.pdf`,
     issuerUrl: 'https://fullcycle.com.br/certificado/4b0b5f02-f2f4-4d73-8b24-bf22e80254a3',
