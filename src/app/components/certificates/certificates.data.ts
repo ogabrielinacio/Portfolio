@@ -5,6 +5,22 @@ const baseUrl = environment.baseUrl;
 
 export const CertificatesArray: Certificate[] = [
   {
+    title: 'Arquitetura Hexagonal',
+    issuer: 'Full Cycle',
+    url: `${baseUrl}/FullCycle-Arquitetura-Hexagonal.pdf`,
+    issuerUrl: 'https://fullcycle.com.br/certificado/1dfdd98d-461b-4f2c-9486-1a7b8211c815',
+    issueDate: new Date(2025,7, 17),
+    category: [CertificateCategory.Backend,CertificateCategory.Architecture]
+  },
+  {
+    title: 'Event Storming na Prática',
+    issuer: 'Full Cycle',
+    url: `${baseUrl}/FullCycle-Event-Storming-Na-Pratica.pdf`,
+    issuerUrl: 'https://fullcycle.com.br/certificado/29db9d0d-89fc-40ad-9dc9-31cd96c334ce',
+    issueDate: new Date(2025,7, 16),
+    category: [CertificateCategory.Architecture]
+  },
+  {
     title: 'DDD: Modelagem Tática e Patterns',
     issuer: 'Full Cycle',
     url: `${baseUrl}/FullCycle-DDD-Modelagem-Tatica-E-Patterns.pdf`,
